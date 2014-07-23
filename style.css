@@ -1,5 +1,7 @@
 /*
 Theme Name: Chef Sense
+/*
+Theme Name: Chef Sense
 Theme URI: phoenix.sheridanc.on.ca/~ccit1911
 Author: Saba Saleha Josh
 Author URI: phoenix.sheridanc.on.ca/~ccit1911
@@ -45,7 +47,7 @@ small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-/*	border: 0px solid white;*/
+	border: 0px solid white;
 /*	font-family: inherit;*/
 /*	font-size: 100%;*/
 /*	font-style: inherit;*/
@@ -817,3 +819,26 @@ object {
     max-width: 11.11%;
 }
 .gallery-caption {}
+
+
+
+
+/*Mobile site*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> FETCH_HEAD
