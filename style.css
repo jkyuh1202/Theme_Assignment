@@ -1,7 +1,5 @@
 /*
 Theme Name: Chef Sense
-/*
-Theme Name: Chef Sense
 Theme URI: phoenix.sheridanc.on.ca/~ccit1911
 Author: Saba Saleha Josh
 Author URI: phoenix.sheridanc.on.ca/~ccit1911
@@ -89,11 +87,11 @@ body .site {
 	margin-top: 3.2rem;
 	margin-bottom: 3.2rem;
 	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+	background-size: 100%;	
 	background-image: url('chef hat.jpg');
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-position: center;
-	background-size: 100%;
 	overflow: inherit;
 }
 
@@ -489,17 +487,17 @@ textarea {
 --------------------------------------------------------------*/
 a:link {
 	text-decoration: none;
-	color: white;
+	color: #990000
 }
 a:visited {
-	text-decoration: none;
+	text-decoration: underline;
 	color: white;
 }
 a:hover {
-	text-decoration: none;
+	text-decoration: #660066;
 }
 a:active {
-	text-decoration: none;
+	text-decoration: #990000;
 }
 
 /*--------------------------------------------------------------
@@ -556,20 +554,35 @@ a:active {
 .main-navigation .current_page_item a,
 .main-navigation .current-menu-item a {
 }
+
+
+
+/*
+MOBILE
+*/
+
+
 /* Small menu */
 .menu-toggle {
     display: none;
 }
+
 @media screen and (max-width: 600px) {
     .menu-toggle,
     .main-navigation.toggled .nav-menu {
-        display: block;
+        display: none;
     }
 
     .main-navigation ul {
         display: none;
     }
-}
+
+
+/*
+MOBILE
+*/
+
+
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -674,22 +687,68 @@ a:active {
 9.0 Widgets
 --------------------------------------------------------------*/
 .widget {
-    margin: 0 0 1.5em;
+   	background-color: #DAB547;
+	opacity: 0.6;
+  	filter: alpha(opacity=60); /* For IE8 and earlier */
+	clear: both;
+	margin: 0 auto;
+	overflow: auto;
+	-webkit-hyphens: auto;
+	-moz-hyphens:    auto;
+	-ms-hyphens:     auto;
+	hyphens:         auto;
+	word-wrap: break-word;
+}
+
+.widget p {
+	font-size: 14px;
+	margin: 0 0 24px;
+	padding: 20px;
+	word-wrap: break-word;
+	
 }
 
 /* Make sure select elements fit in widgets */
 .widget select {
-    max-width: 100%;
+  	max-width: 100%;
+	display: block;
 }
 
 /* Search widget */
 .widget_search .search-submit {
-    display: none;
+    display: block;
 }
 
+.widget-area .widget ul ul {
+	margin: 0 auto;
+	display: block;
+}
+
+.widget_rss li {
+	display: block;
+	
+}
+.widget_recent_entries .post-date,
+.widget_rss .rss-date {
+	color: #FFFFFF;
+	font-size: 12px;
+	font-size: 0.885714286rem;
+	display: block;
+}
+
+.widget_search label {
+	display: block;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.8;
+}
+ 
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
+
+
+
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
@@ -710,6 +769,8 @@ a:active {
 .entry-content,
 .entry-summary {
     margin: 1.5em 0 0;
+	height: 600px;
+	overflow: hidden;
 }
 .page-links {
     clear: both;
@@ -819,26 +880,3 @@ object {
     max-width: 11.11%;
 }
 .gallery-caption {}
-
-
-
-
-/*Mobile site*/
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> FETCH_HEAD
